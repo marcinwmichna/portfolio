@@ -3,7 +3,7 @@ let email = document.getElementById("email");
 let fadein = document.getElementById("fadein");
 let fadeout = document.getElementById("fadeout");
 
-const API_URL = "https://email-message.herokuapp.com/";
+const API_URL = "https://email-message.herokuapp.com/messages/";
 cta.addEventListener("click", (event) => {
   event.preventDefault();
   if (this.email.value == null || this.email.value == "") {
