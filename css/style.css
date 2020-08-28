@@ -522,6 +522,10 @@ svg {
   align-items: center;
   margin: 0 1em 0 5em;
 }
+.tech-stack-items img {
+  margin: auto;
+  fill: green;
+}
 
 @media (min-width: 576px) {
   :root {
