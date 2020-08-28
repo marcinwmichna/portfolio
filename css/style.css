@@ -30,10 +30,18 @@ ul {
 }
 .error {
   display: none;
+  opacity: 80%;
 }
 .--active {
   display: block;
 }
+#cta {
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 0.8em 3em;
+  height: auto;
+}
+
 a {
   margin: 0.2em;
   color: #84847e;
@@ -198,6 +206,12 @@ a {
 .vuejs {
   color: #3fb37f;
 }
+.nodejs {
+  color: #659a60;
+}
+.figma {
+  color: #ab6aff;
+}
 .technologies-bar {
   margin: 0 10px;
 }
@@ -317,6 +331,7 @@ label {
   font-size: 1em;
 }
 .portfolio-item {
+  margin: 1em;
   align-self: start;
   justify-self: center;
   width: auto;
@@ -445,7 +460,7 @@ p {
 }
 .p3 {
   font-size: 1em;
-  opacity: 90%;
+  opacity: 80%;
 }
 .p4 {
   font-weight: bold;
@@ -496,6 +511,16 @@ svg {
   display: flex;
   justify-content: space-between;
   position: sticky;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+}
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em 0 5em;
 }
 
 @media (min-width: 576px) {
@@ -576,20 +601,21 @@ svg {
   .left-form {
     padding: 0px 2.5em;
   }
-  .main-item {
-    margin: 1em;
-  }
+
   .portfolio-item {
     height: 620px;
   }
   .light-red-border {
     width: 400px;
   }
-  .contact-icon {
-    padding: 6px;
-    margin: 0 1em 0 5em;
-  }
+
   .contact-text {
     margin-top: 0;
+  }
+  .main-item {
+    height: 700px;
+  }
+  .sub-item {
+    margin-top: 2em;
   }
 }
