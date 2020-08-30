@@ -17,7 +17,7 @@
               <li><a class="header-a" href="about.html">About</a></li>
               <li><a class="header-a" href="portfolio.html">Portfolio</a></li>
               <li>
-                <a class="header-a" href="contact.html">Contact</a>
+                <a class="header-a" id="contact" href="contact.html">Contact</a>
               </li>
             </ul>
           </nav>
@@ -51,6 +51,7 @@
               />
             </form>
           </div>
+
           <div class="left-form" style="display: none" id="fadein">
             <h1 class="p2 blue">Success!</h1>
             <h1 class="p4 light-red">
@@ -62,13 +63,149 @@
               <img src="images/undraw_envelope_n8lc.svg" />
             </div>
             <div class="contact-text">
-              <div class="contact-row">
-                <img class="contact-icon" src="images/mobile_icon.svg" alt="" />
-                <p class="p3">+48 660 297 033</p>
+              <div class="contact-row-wrap">
+                <a class="contact-row" href="mailto:marcin.w.michna@gmail.com">
+                  <svg
+                    class="contact-icon"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646
+                     c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719
+                     C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"
+                    />
+                    <path
+                      d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885
+                     c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542
+                     C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333
+                     v-268.25C512,132.927,509.583,129.146,505.813,127.406z"
+                    />
+                  </svg>
+                  <p id="emailId" class="p3">marcin.w.michna@gmail.com</p>
+                </a>
+                <svg
+                  version="1.1"
+                  class="contact-copy"
+                  id="copyEmail"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 561 561"
+                  style="enable-background: new 0 0 561 561"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M395.25,0h-306c-28.05,0-51,22.95-51,51v357h51V51h306V0z M471.75,102h-280.5c-28.05,0-51,22.95-51,51v357
+                   c0,28.05,22.95,51,51,51h280.5c28.05,0,51-22.95,51-51V153C522.75,124.95,499.8,102,471.75,102z M471.75,510h-280.5V153h280.5V510
+                   z"
+                  />
+                </svg>
+
+                <span id="copied-email" class="copied">copied</span>
               </div>
-              <div class="contact-row">
-                <img class="contact-icon" src="images/mail_icon.svg" alt="" />
-                <p class="p3">marcin.w.michna@gmail.com</p>
+              <div class="contact-row-wrap">
+                <a
+                  target="_blank"
+                  class="contact-row"
+                  href="https://github.com/marcinwmichna"
+                >
+                  <svg
+                    class="contact-icon"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                  </svg>
+                  <p target="_blank" id="githubId" class="p3">
+                    https://github.com/marcinwmichna
+                  </p>
+                </a>
+                <svg
+                  version="1.1"
+                  class="contact-copy"
+                  id="copyGithub"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 561 561"
+                  style="enable-background: new 0 0 561 561"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M395.25,0h-306c-28.05,0-51,22.95-51,51v357h51V51h306V0z M471.75,102h-280.5c-28.05,0-51,22.95-51,51v357
+                 c0,28.05,22.95,51,51,51h280.5c28.05,0,51-22.95,51-51V153C522.75,124.95,499.8,102,471.75,102z M471.75,510h-280.5V153h280.5V510
+                 z"
+                  />
+                </svg>
+
+                <span id="copied-github" class="copied">copied</span>
+              </div>
+              <div class="contact-row-wrap">
+                <a
+                  target="_blank"
+                  class="contact-row"
+                  href="https://www.linkedin.com/in/marcin-michna-685732185/"
+                >
+                  <svg
+                    class="contact-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="27"
+                    height="27"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    ></path>
+                  </svg>
+                  <p target="_blank" id="linkedinId" class="p3">
+                    https://www.linkedin.com/in/marcin-michna-685732185/
+                  </p>
+                </a>
+                <svg
+                  version="1.1"
+                  class="contact-copy"
+                  id="copyLinkedIn"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 561 561"
+                  style="enable-background: new 0 0 561 561"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M395.25,0h-306c-28.05,0-51,22.95-51,51v357h51V51h306V0z M471.75,102h-280.5c-28.05,0-51,22.95-51,51v357
+                 c0,28.05,22.95,51,51,51h280.5c28.05,0,51-22.95,51-51V153C522.75,124.95,499.8,102,471.75,102z M471.75,510h-280.5V153h280.5V510
+                 z"
+                  />
+                </svg>
+
+                <span id="copied-linkedin" class="copied">copied</span>
               </div>
             </div>
           </div>

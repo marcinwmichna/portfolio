@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-family: Nunito;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   background-color: #f7f7f7;
   color: #84847e;
 }
@@ -512,13 +512,58 @@ svg {
 .contact-row {
   display: flex;
   align-items: center;
+  margin-left: 2em;
+}
+.contact-row p {
+  font-size: 0.9em;
 }
 .contact-icon {
   float: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1em 0 1em;
+  margin: 0 1em;
+  min-width: 27px;
+  min-height: 27px;
+  width: 30px;
+  height: 30px;
+  fill: #84847e;
+}
+.contact-copy {
+  fill: #84847e;
+  opacity: 30%;
+  cursor: pointer;
+  position: fixed;
+  margin: 0.8em 0 0 1em;
+}
+.contact-copy:hover {
+  fill: #778bf3;
+}
+.copied {
+  transition: all 0.2s ease-in-out;
+  font-size: 0.7em;
+  border-radius: 80px;
+  color: white;
+  padding: 0.6em;
+  background-color: #778bf3;
+  opacity: 50%;
+  align-self: center;
+  margin-left: 1em;
+}
+#copied-email,
+#copied-github,
+#copied-linkedin {
+  display: none;
+}
+.contact-row:hover > .contact-icon {
+  fill: #3d5af1;
+  opacity: 75%;
+  transition: all 0.2s ease-in-out;
+}
+.contact-row-wrap {
+  display: flex;
+  height: 2.5em;
+  margin-top: 0.2em;
 }
 .tech-stack-items img {
   margin: auto;
@@ -575,9 +620,6 @@ svg {
   .left-form {
     padding: 0px 1em;
   }
-  .contact-icon {
-    margin: 0 1em 0 5em;
-  }
 }
 @media (min-width: 768px) {
   :root {
@@ -622,5 +664,11 @@ svg {
   }
   .sub-item {
     margin-top: 2em;
+  }
+  .contact-row {
+    margin-left: 5em;
+  }
+  .contact-copy {
+    margin: 0.8em 0 0 4em;
   }
 }
