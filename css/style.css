@@ -533,7 +533,7 @@ svg {
   fill: #84847e;
   opacity: 30%;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   margin: 0.8em 0 0 1em;
 }
 .contact-copy:hover {
