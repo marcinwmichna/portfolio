@@ -6,7 +6,7 @@ let fadeout = document.getElementById("fadeout");
 let herokuInit = document.getElementById("email");
 
 // const API_URL = "http://localhost:5555/messages/";
-const API_URL = "https://email-message.herokuapp.com/";
+const API_URL = "https://email-message.herokuapp.com/messages/";
 cta.addEventListener("click", (event) => {
   event.preventDefault();
   if (this.email.value == null || this.email.value == "") {
