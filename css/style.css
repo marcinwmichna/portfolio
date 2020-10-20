@@ -221,8 +221,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 33fr));
   border-radius: 20px;
-  /* box-shadow: 0 0px 30px rgba(11, 33, 74, 0.11),
-    0 -2px 5px rgba(11, 33, 74, 0.03); */
+
   grid-gap: 1em;
   padding: 4em 1em;
 }
